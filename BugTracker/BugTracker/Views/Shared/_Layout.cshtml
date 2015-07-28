@@ -29,16 +29,16 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 
-    
-    @Scripts.Render("~/bundles/modernizr")
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'><!-- Google Fonts -->
 
+    @Scripts.Render("~/bundles/modernizr")
 </head>
-<body class="skin-blue">
+<body class="skin-black">
     <!-- header logo: style can be found in header.less -->
     <header class="header">
-        <a href="index.html" class="logo">
+        <a href="@Url.Action("Admin","Home")" class="logo">
             <!-- Add the class icon to your logo image or logo icon to add the margining -->
-            AdminLTE
+            Bug Tracker
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
@@ -246,7 +246,7 @@
                     <!-- User Account: style can be found in dropdown.less -->
                     <li class="dropdown user user-menu">
                         @Html.Partial("_LoginPartial")
-                        
+
                         <ul class="dropdown-menu">
                             <!-- User image -->
                             <li class="user-header bg-light-blue">
@@ -283,22 +283,13 @@
             </div>
         </nav>
     </header>
-
     <div class="wrapper row-offcanvas row-offcanvas-left">
         <!-- Left side column. contains the logo and sidebar -->
         <aside class="left-side sidebar-offcanvas">
             <!-- sidebar: style can be found in sidebar.less -->
             <section class="sidebar">
                 <!-- Sidebar user panel -->
-                <div class="user-panel">
-                    <div class="pull-left image">
-                        <img src="img/avatar3.png" class="img-circle" alt="User Image" />
-                    </div>
-                    <div class="pull-left info">
-                        <p>Hello, Jane</p>
-                        <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-                    </div>
-                </div>
+                
                 <!-- search form -->
                 <form action="#" method="get" class="sidebar-form">
                     <div class="input-group">
@@ -309,11 +300,9 @@
                     </div>
                 </form>
                 <!-- /.search form -->
-                
- <!-- ==============================================
-      SIDEBAR MENU
-      =============================================== -->
-                
+                <!-- ==============================================
+                     SIDEBAR MENU
+                     =============================================== -->
                 <!-- sidebar menu: : style can be found in sidebar.less -->
                 <ul class="sidebar-menu">
                     <li class="active">
@@ -330,7 +319,7 @@
                         <a href="#">
                             <i class="fa fa-bar-chart-o"></i>
                             <span>Tickets</span>
-                            
+
                         </a>
                     </li>
                     <li class="treeview">
@@ -358,7 +347,7 @@
                             <li><a href="pages/forms/editors.html"><i class="fa fa-angle-double-right"></i> Editors</a></li>
                         </ul>
                     </li>
-                    
+
                 </ul>
             </section>
             <!-- /.sidebar -->
@@ -376,24 +365,18 @@
                     <li class="active">Dashboard</li>
                 </ol>
             </section>
-
             <!-- Begin Page Content -->
-               
-             @RenderBody()
-                
-            <!-- End Page Content -->    
-            
+            @RenderBody()
+
+            <!-- End Page Content -->
 
         </aside><!-- /.right-side -->
     </div><!-- ./wrapper -->
     <!-- add new calendar event modal -->
-
-
     <!-- Begin Default Scripts (Bootstrap/jQuerry) -->
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
-
     <!-- Begin Custom Scripts -->
     <script src="~/Scripts/jquery-ui-1.10.3.min.js"></script><!-- jQuery UI 1.10.3 -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script><!-- Morris.js charts -->
@@ -407,6 +390,5 @@
     <script src="~/Scripts/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script><!-- Bootstrap WYSIHTML5 -->
     <script src="~/Scripts/plugins/iCheck/icheck.min.js"></script><!-- iCheck -->
     <script src="~/Scripts/AdminLTE/app.js"></script><!-- AdminLTE App -->
-
 </body>
 </html>

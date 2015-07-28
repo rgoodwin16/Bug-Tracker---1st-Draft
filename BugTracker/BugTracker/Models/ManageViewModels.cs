@@ -58,6 +58,25 @@ namespace BugTracker.Models
         public string ConfirmPassword { get; set; }
     }
 
+    public class ChangeUserNameViewModel
+    {
+        [Required]
+        [DataType(DataType.EmailAddress)]
+        [Display(Name = "Current email")]
+        public string OldUserName { get; set; }
+
+        [Required]
+        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
+        [DataType(DataType.EmailAddress)]
+        [Display(Name = "New user name")]
+        public string NewUserName { get; set; }
+
+        [DataType(DataType.EmailAddress)]
+        [Display(Name = "Confirm new user name")]
+        [Compare("NewUserName", ErrorMessage = "The new user name and confirmation user name do not match.")]
+        public string ConfirmUserName { get; set; }
+    }
+
     public class AddPhoneNumberViewModel
     {
         [Required]
