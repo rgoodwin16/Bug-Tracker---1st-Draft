@@ -53,3 +53,9 @@ C:\Users\nanye\Documents\GitHub\Bug-Tracker---1st-Draft\BugTracker\BugTracker\bi
 C:\Users\nanye\Documents\GitHub\Bug-Tracker---1st-Draft\BugTracker\BugTracker\obj\Debug\BugTracker.csprojResolveAssemblyReference.cache
 C:\Users\nanye\Documents\GitHub\Bug-Tracker---1st-Draft\BugTracker\BugTracker\obj\Debug\BugTracker.dll
 C:\Users\nanye\Documents\GitHub\Bug-Tracker---1st-Draft\BugTracker\BugTracker\obj\Debug\BugTracker.pdb
+C:\Users\nanye\Documents\GitHub\Bug-Tracker---1st-Draft\BugTracker\BugTracker\bin\System.Net.Http.Formatting.dll
+C:\Users\nanye\Documents\GitHub\Bug-Tracker---1st-Draft\BugTracker\BugTracker\bin\System.Web.Http.dll
+C:\Users\nanye\Documents\GitHub\Bug-Tracker---1st-Draft\BugTracker\BugTracker\bin\System.Web.Http.WebHost.dll
+C:\Users\nanye\Documents\GitHub\Bug-Tracker---1st-Draft\BugTracker\BugTracker\bin\System.Net.Http.Formatting.xml
+C:\Users\nanye\Documents\GitHub\Bug-Tracker---1st-Draft\BugTracker\BugTracker\bin\System.Web.Http.xml
+C:\Users\nanye\Documents\GitHub\Bug-Tracker---1st-Draft\BugTracker\BugTracker\bin\System.Web.Http.WebHost.xml
